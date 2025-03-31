@@ -7,7 +7,6 @@ Setup script for the mario_rl_project package.
 
 from setuptools import setup, find_packages
 
-# Read the README file for the long description.
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
@@ -17,9 +16,8 @@ setup(
     description="A Deep Reinforcement Learning project to train a Mario agent using DDQN.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Your Name",  # Replace with your name
-    author_email="your.email@example.com",  # Replace with your email
-    url="https://github.com/yourusername/mario_rl_project",  # Update URL accordingly
+    author="Onur Ünal", 
+    url="https://github.com/onurunaall/mario_rl_project",
     packages=find_packages(),
     install_requires=[
         "torch",
@@ -40,7 +38,7 @@ setup(
     python_requires=">=3.7",
     entry_points={
         "console_scripts": [
-            "mario_train=train:main",  # Allows running the training loop via command line.
+            "mario_train=train:main",
         ],
     },
 )
