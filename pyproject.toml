@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mario_rl_project"
+version = "0.1.0"
+description = "A Reinforcement Learning project to train a Mario agent using DDQN."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Onur Ünal" }
+]
+dependencies = [
+    "torch",
+    "gym",
+    "gym-super-mario-bros",
+    "nes_py",
+    "torchvision",
+    "tensordict",
+    "torchrl",
+    "numpy",
+    "matplotlib"
+]
+
+[project.urls]
+Homepage = "https://github.com/onurunaall/mario_rl_project"
